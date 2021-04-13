@@ -8,15 +8,25 @@ grf {
 
 town_names(pre_f) {
 	{
-		text("Venda da ",15),
-		text("Santa ",15),
-		text("",1),
+		text("Venda da ",1),
+		text("Santa ",1),
+		text("Aldeia da ",1),
+		text("",12),
 	}
 }
+
 town_names(pre) {
 	{
 		text("Vila Velha de ", 1),
 		text("Vila Nova de ", 1),
+		text("",12),
+	}
+}
+
+town_names(pre_m) {
+	{
+		text("Venda do ", 1),
+		text("Vila Nova do ", 1),
 		text("",12),
 	}
 }
@@ -26,21 +36,26 @@ town_names(mid_f) {
 	 	text("Gaita", 1),
 		text("Lourinhã",1),
 		text("Meimoa",1),
-		text("Espanhola",1),	 	
+		text("Espanhola",1), 	
+		text("Meia-Praia",1),
+		text("Ponte",1),
 	}
 }
 
 town_names(mid_m) {
 	{
 		text("Gavião", 1),
+		text("Pinheiro",1),
+		text("Campo",1),
 	}
 }
 town_names(mid) {
 	{
-	 	text("Vasco Esteves", 31),
-	 	text("Janeiro", 10),
+	 	text("Vasco Esteves", 1),
+	 	text("Janeiro", 1),
 		text("Unhais", 1),
 		text("Ródão", 1),
+		text("Gaia",1),
 	}
 }
 
@@ -51,6 +66,9 @@ town_names(suf) {
 		text(" da Serra", 1),
 		text(" do Sul", 1),
 		text(" Grande", 1),
+		text(", Vila Morena",1),
+		text(" de Sôr",1),
+		text(" do Monte",1),
 		text("",12),	 	
 	}
 }
@@ -59,6 +77,20 @@ town_names(suf_f) {
 	{
 	 	text(" Comprida", 1),
 		text(" Pequena", 1),
+	}
+}
+
+town_names(suf_m) {
+	{
+	 	text(" Comprido", 1),
+		text(" Pequeno", 1),
+	}
+}
+
+town_names(SUF_M_SINGULAR) {
+	{	
+		town_names(suf,1),
+		town_names(suf_m,1)
 	}
 }
 
@@ -74,7 +106,7 @@ town_names(F) {
 	 	town_names(pre_f,1)
 	}
 	{
-	 	town_names(mid_f,3)
+	 	town_names(mid_f,1)
 	}
 	{
 	 	town_names(SUF_F_SINGULAR,1)
@@ -86,17 +118,31 @@ town_names(N) {
 	 	town_names(pre,1)
 	}
 	{
-	 	town_names(mid,3)
+	 	town_names(mid,1)
 	}
 	{
 	 	town_names(suf,1)
 	}
 }
 
+town_names(M) {
+	{
+	 	town_names(pre_m,1)
+	}
+	{
+	 	town_names(mid_m,1)
+	}
+	{
+	 	town_names(SUF_M_SINGULAR,1)
+	}
+}
+
 town_names {
 	styles:	string(STR_NAME_LIST);
 	{
-		town_names(F,1),
 		town_names(N,1),
+		town_names(M,1),
+		town_names(F,1),
+		
 	}
 }
