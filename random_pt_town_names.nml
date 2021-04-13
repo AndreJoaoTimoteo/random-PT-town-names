@@ -1,0 +1,89 @@
+grf {
+	grfid: "AT\01\03";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 3;
+	min_compatible_version: 0;
+}
+
+town_names(pre_f) {
+	{
+		text("Venda da ",15),
+		text("",1),
+	}
+}
+town_names(pre) {
+	{
+		text("Raios Partam ", 31),
+		text("Vila Nova de ", 1),
+		text("",12),
+	}
+}
+
+town_names(mid_f) {
+	{
+	 	text("Gaita", 1),
+		text("Lourinhã",1),
+		text("Ciganada",1),
+		text("Espanhola",1),	 	
+	}
+}
+
+town_names(mid) {
+	{
+	 	text("Vasco Esteves", 31),
+	 	text("Janeiro", 10),
+		text("Gavião", 1),
+		text("Unhais", 1),	 	
+	}
+}
+
+town_names(suf) {
+	{
+	 	text(" de Cima", 1),
+	 	text(" de Baixo", 1),
+		text(" da Serra", 1),
+		text(" do Sul", 1),
+		text(" Grande", 1),
+		text("",12),	 	
+	}
+}
+
+town_names(suf_f) {
+	{
+	 	text(" Comprida", 1),
+		text(" Pequena", 1),
+	}
+}
+
+town_names(F) {
+	{
+	 	town_names(pre_f,1)
+	}
+	{
+	 	town_names(mid_f,3)
+	}
+	{
+	 	town_names(suf,1)
+	}
+}
+
+town_names(N) {
+	{
+	 	town_names(pre,1)
+	}
+	{
+	 	town_names(mid,3)
+	}
+	{
+	 	town_names(suf,1)
+	}
+}
+
+town_names {
+	styles:	string(STR_NAME_LIST);
+	{
+	town_names(F,1),
+	town_names(N,1),
+	}
+}

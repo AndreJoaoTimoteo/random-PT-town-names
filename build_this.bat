@@ -1,0 +1,1 @@
+nmlc --grf=o_meu_grf2.grf random_pt_town_names.nml

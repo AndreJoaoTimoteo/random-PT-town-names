@@ -1,0 +1,6 @@
+##grflangid 0x01
+
+STR_GRF_NAME			:Random Portuguese Town Names {VERSION}
+STR_GRF_DESCRIPTION		:{BLACK}License: {SILVER}GPL v2
+
+STR_NAME_LIST           : Random PT Names
