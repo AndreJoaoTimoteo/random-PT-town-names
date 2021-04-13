@@ -9,12 +9,13 @@ grf {
 town_names(pre_f) {
 	{
 		text("Venda da ",15),
+		text("Santa ",15),
 		text("",1),
 	}
 }
 town_names(pre) {
 	{
-		text("Raios Partam ", 31),
+		text("Vila Velha de ", 1),
 		text("Vila Nova de ", 1),
 		text("",12),
 	}
@@ -24,17 +25,23 @@ town_names(mid_f) {
 	{
 	 	text("Gaita", 1),
 		text("Lourinhã",1),
-		text("Ciganada",1),
+		text("Meimoa",1),
 		text("Espanhola",1),	 	
 	}
 }
 
+
+town_names(mid_m) {
+	{
+		text("Gavião", 1),
+	}
+}
 town_names(mid) {
 	{
 	 	text("Vasco Esteves", 31),
 	 	text("Janeiro", 10),
-		text("Gavião", 1),
-		text("Unhais", 1),	 	
+		text("Unhais", 1),
+		text("Ródão", 1),
 	}
 }
 
@@ -56,6 +63,13 @@ town_names(suf_f) {
 	}
 }
 
+town_names(SUF_F_SINGULAR) {
+	{	
+		town_names(suf,1),
+		town_names(suf_f,1)
+	}
+}
+
 town_names(F) {
 	{
 	 	town_names(pre_f,1)
@@ -64,7 +78,7 @@ town_names(F) {
 	 	town_names(mid_f,3)
 	}
 	{
-	 	town_names(suf,1)
+	 	town_names(SUF_F_SINGULAR,1)
 	}
 }
 
