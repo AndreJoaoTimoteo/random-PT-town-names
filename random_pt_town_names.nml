@@ -30,7 +30,6 @@ town_names(mid_f) {
 	}
 }
 
-
 town_names(mid_m) {
 	{
 		text("Gavião", 1),
@@ -97,7 +96,7 @@ town_names(N) {
 town_names {
 	styles:	string(STR_NAME_LIST);
 	{
-	town_names(F,1),
-	town_names(N,1),
+		town_names(F,1),
+		town_names(N,1),
 	}
 }
