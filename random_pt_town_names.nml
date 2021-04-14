@@ -28,7 +28,6 @@ town_names(pre_m) {
 	{
 		text("Venda do ", 1),
 		text("Vale do ", 1),
-		text("Santo ", 1),
 		text("",1),
 	}
 }
@@ -88,6 +87,7 @@ town_names(suf_m) {
 	{
 		text(" Pequeno", 1),
 		text(" Alto", 1),
+		text(" Santo", 1),
 	}
 }
 
