@@ -51,15 +51,17 @@ town_names(mid_m) {
 		text("Pinheiro",1),
 		text("Campo",1),
 		text("Porto", 1),
+		text("Cacém",1),
 	}
 }
 town_names(mid) {
 	{
 	 	text("Vasco Esteves", 1),
-	 	text("Janeiro", 1),
+	 	text("Odivelas", 1),
 		text("Unhais", 1),
 		text("Ródão", 1),
 		text("Gaia",1),
+		text("Massamá",1),
 	}
 }
 
