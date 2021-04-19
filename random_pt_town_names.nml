@@ -10,7 +10,7 @@ town_names(pre_f) {
 	{
 		text("Venda da ",1),
 		text("Aldeia da ",1),
-		text("Figueira da ",1),
+		text("Cova da ",1),
 		text("",1),
 	}
 }
@@ -36,10 +36,9 @@ town_names(mid_f) {
 	{
 		text("Gaita", 1),
 		text("Lourinhã",1),
-		text("Meimoa",1),
+		text("Agualva",1),
 		text("Praia",1), 
-		text("Meia-Praia",1),
-		text("Foz", 1),
+		text("Moura",1),
 		text("Covilhã", 1),
 		text("Ferreira", 1),
 	}
@@ -52,6 +51,7 @@ town_names(mid_m) {
 		text("Campo",1),
 		text("Porto", 1),
 		text("Cacém",1),
+		text("Ferro", 1),
 	}
 }
 town_names(mid) {
