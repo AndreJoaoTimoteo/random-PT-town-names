@@ -148,6 +148,7 @@ town_names {
 	{
 		town_names(N,1),
 		town_names(M,1),
-		town_names(F,1),	
+		town_names(F,1),
+		text("Amadora",1)
 	}
 }
